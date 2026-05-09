@@ -1,0 +1,81 @@
+{
+  "name": "sea-cliff-theme",
+  "displayName": "Sea Cliff Theme",
+  "description": "A VS Code theme with a blue tinted dark base, high-contrast pastel syntax, and 3 darkness variants.",
+  "version": "1.0.0",
+  "publisher": "danarnold",
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "homepage": "https://github.com/danarnold/sea-cliff-theme-vsc#readme",
+  "bugs": {
+    "url": "https://github.com/danarnold/sea-cliff-theme-vsc/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danarnold/sea-cliff-theme-vsc"
+  },
+  "galleryBanner": {
+    "color": "#0D0F12",
+    "theme": "dark"
+  },
+  "pricing": "Free",
+  "qna": false,
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": true
+  },
+  "files": [
+    "themes",
+    "assets",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "pastel",
+    "accessibility",
+    "accessible",
+    "sea cliff",
+    "wcag",
+    "blue",
+    "contrast",
+    "high contrast"
+  ],
+  "packageManager": "pnpm@11.0.9",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Sea Cliff Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sea-cliff-soft-color-theme.json"
+      },
+      {
+        "label": "Sea Cliff Deep",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sea-cliff-deep-color-theme.json"
+      },
+      {
+        "label": "Sea Cliff Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sea-cliff-night-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "generate:readme": "node scripts/generate-readme-assets.mjs",
+    "package": "vsce package --allow-star-activation"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.9.1"
+  }
+}

@@ -1,8 +1,8 @@
 {
   "name": "sea-cliff-theme",
   "displayName": "Sea Cliff Theme",
-  "description": "A VS Code theme with a blue tinted dark base, high-contrast pastel syntax, and 3 darkness variants.",
-  "version": "1.0.0",
+  "description": "A VS Code theme with a blue tinted dark base, high-contrast pastel syntax, and 4 darkness variants.",
+  "version": "1.1.0",
   "publisher": "danarnold",
   "license": "MIT",
   "icon": "assets/icon.png",
@@ -68,6 +68,11 @@
         "label": "Sea Cliff Night",
         "uiTheme": "vs-dark",
         "path": "./themes/sea-cliff-night-color-theme.json"
+      },
+      {
+        "label": "Sea Cliff Midnight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sea-cliff-midnight-color-theme.json"
       }
     ]
   },
@@ -76,6 +81,6 @@
     "package": "vsce package --allow-star-activation"
   },
   "devDependencies": {
-    "@vscode/vsce": "^3.9.1"
+    "@vscode/vsce": "^3.9.2"
   }
 }
